@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5", // TypsSript 코드가 컴파일될 Javascript의 버전을 지정
+    "module": "esnext", // TypeScript 코드에서 사용할 모듈 시스템 지정
+    "jsx": "react-jsx", // TypeScript 코드에서 JSX 문법 사용여부
+    "jsxImportSource": "@emotion/react",
+    "strict": true, // TypeScript에서 제공하는 엄격한 타입 체크 옵션을 활성화
+    "esModuleInterop": true, // CommonJS 모듈을 사용하는 Javscript 라이브러리와 함께 Typesciprt를 사용할 떄, 임포트 할때의 규칙 지정
+    "skipLibCheck": true, // node_modules 폴더 내의 라이브러리 파일에서 타입 검사를 제외
+    "forceConsistentCasingInFileNames": true, // 파일 이름에서 대문자와 소문자의 사용을 강제
+    "moduleResolution": "node", // 모듈 해결 방법을 지정
+    "resolveJsonModule": true, // JSON 파일을 모듈로 사용할 수 있도록 지정
+    "isolatedModules": true, // 각 파일을 독립된 모듈로 컴파일
+    "noEmit": true, // 컴파일 결과물을 생성하지 않음
+    "types": ["@emotion/react/types/css-prop"], // emotion의 css-prop TypeScipt 지원
+    "lib": ["dom", "es2015"],
+    "baseUrl": ".", // baseurl로 설정한 경로를 생략할 수 있음
+    "paths": {
+      "src/*": ["./src/*"]
+    },
+  },
+  "include": ["src"], // 프로젝트의 TypeScript 소스 코드가 있는 디렉토리 지정
+  "references": [{ "path": "./tsconfig.node.json" }] 
+}

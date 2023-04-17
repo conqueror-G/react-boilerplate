@@ -1,0 +1,37 @@
+{
+  "name": "react-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "clean-install": "rm -rf pnpm-lock.yaml && rm -rf node_modules && pnpm install",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.10.0",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.10.6",
+    "i18next": "^22.4.14",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
+    "react-router-dom": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.34",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint-config-jklasd2001s": "^0.0.1",
+    "path": "^0.12.7",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.1",
+    "vite-plugin-svgr": "^2.4.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
