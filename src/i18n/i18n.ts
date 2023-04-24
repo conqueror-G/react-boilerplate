@@ -8,7 +8,7 @@ import ko from './resources/ko/translation.json'
 const resources = {
   ko: {
     translation: ko,
-  }
+  },
 }
 
 i18n
