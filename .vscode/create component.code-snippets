@@ -1,0 +1,17 @@
+{
+	"create component": {
+		"prefix": "cc",
+		"body": [
+		  "import { Fragment } from 'react'",
+		  "",
+		  "export const $TM_FILENAME_BASE = () => {",
+		  "  return (",
+	      "    <Fragment>",
+		  "    </Fragment>",
+ 		  "  )",
+		  "}",
+		  ""
+		],
+		"description": ""
+	  }
+}
