@@ -1,4 +1,4 @@
-import * as path from 'path'
+import { resolve } from 'path'
 
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
@@ -15,8 +15,6 @@ export default defineConfig({
     }),
   ],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
+    alias: [{ find: 'src', replacement: resolve('src') }],
   },
 })
