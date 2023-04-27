@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next'
 
+import { Box } from 'src/elements'
+
 export const Home = () => {
   const { t } = useTranslation()
 
-  return <div>{t('Home')}</div>
+  return <Box>{t('Home')}</Box>
 }
